@@ -123,7 +123,7 @@ npm install
 
 Update the .env file:
 
-MONGO_URI=mongodb+srv://yourname:yourpassword@cluster0.xxxxx.mongodb.net/todo-db?retryWrites=true&w=majority
+MONGO_URI=your_mongodb_connection_string_here
 PORT=5000
 CLIENT_ORIGIN=http://localhost:5173
 JWT_SECRET=mysecretjwt2024todoapp
