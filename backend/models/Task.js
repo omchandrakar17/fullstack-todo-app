@@ -1,0 +1,27 @@
+ const mongoose = require("mongoose");
+
+const TaskSchema = new mongoose.Schema(
+  {
+    title: {
+      type: String,
+      required: [true, "Task title is required."],
+      trim: true,
+      maxlength: [120, "Title cannot exceed 120 characters."],
+    },
+    description: {
+      type: String,
+      trim: true,
+      maxlength: [300, "Description cannot exceed 300 characters."],
+      default: "",
+    },
+    completed: {
+      type: Boolean,
+      default: false,
+    },
+  },
+  {
+    timestamps: true, 
+  }
+);
+
+module.exports = mongoose.model("Task", TaskSchema);
