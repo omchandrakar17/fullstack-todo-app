@@ -5,6 +5,25 @@ It includes user authentication, task management, and filtering features.
 
 ---
 
+## Project Objective
+
+The objective of this project is to develop a full-stack task management application using the MERN stack that allows users to securely manage 
+their daily tasks with authentication, real-time updates, and efficient data storage.
+
+---
+
+## Project Description
+
+My Tasks is a full-stack web application designed to help users manage their daily tasks efficiently. It provides secure authentication using 
+JWT, allowing users to create, update, delete, and track tasks.
+
+The application follows a client-server architecture where the frontend is built using React and communicates with a Node.js and Express 
+backend. MongoDB Atlas is used for cloud-based data storage.
+
+The app includes task filtering, progress tracking, and user profile management features, making it a complete productivity tool.
+
+---
+
 ## What This App Can Do
 
 - Create a new account with name, age, email, and password
@@ -99,8 +118,6 @@ Major project/
 │   ├── task added.png
 │   └── task completed.png
 │
-├──.gitignore
-|
 └── README.md
 
 ---
@@ -123,7 +140,7 @@ npm install
 
 Update the .env file:
 
-MONGO_URI=your_mongodb_connection_string_here
+MONGO_URI=mongodb+srv://yourname:yourpassword@cluster0.xxxxx.mongodb.net/todo-db?retryWrites=true&w=majority
 PORT=5000
 CLIENT_ORIGIN=http://localhost:5173
 JWT_SECRET=mysecretjwt2024todoapp
@@ -169,6 +186,14 @@ http://localhost:5173
 | DELETE | /api/tasks/:id | Delete a task | Yes |
 
 Protected means authentication is required.
+
+---
+
+## API Explanation
+
+- Authentication APIs handle user registration, login, and profile updates using JWT tokens.
+- Task APIs allow users to perform CRUD operations (Create, Read, Update, Delete) on tasks.
+- Protected routes require a valid token sent in headers for authorization.
 
 ---
 
@@ -238,6 +263,16 @@ Never share your .env file. Add it to .gitignore.
 
 ---
 
+## Challenges Faced
+
+- Implementing secure authentication using JWT tokens
+- Managing state between frontend and backend
+- Handling API errors and validation
+- Connecting MongoDB Atlas with proper configuration
+- Ensuring smooth UI updates after task operations
+
+---
+
 ## How to Start the App
 
 Terminal 1 — Backend:
@@ -291,4 +326,5 @@ Then open http://localhost:5173
 ## Built By
 
 Om Chandrakar  
+Roll No: WD-FSWD-A4/FEB-8962
 MERN Stack Todo Application — Major Project 2026
