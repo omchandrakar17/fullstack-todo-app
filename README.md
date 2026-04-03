@@ -63,7 +63,7 @@ The app includes task filtering, progress tracking, and user profile management 
 ---
 
 ## Project Folder Structure
-
+```
 Major project/
 │
 ├── backend/
@@ -119,6 +119,7 @@ Major project/
 │   └── task completed.png
 │
 └── README.md
+```
 
 ---
 
