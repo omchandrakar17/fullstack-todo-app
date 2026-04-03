@@ -80,7 +80,7 @@ Major project/
 │   ├── routes/
 │   │   ├── authRoutes.js
 │   │   └── taskRoutes.js
-│   ├── .env
+│   ├── .env.example
 │   ├── server.js
 │   └── package.json
 │
