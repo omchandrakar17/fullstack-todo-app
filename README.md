@@ -118,6 +118,7 @@ Major project/
 │   ├── task added.png
 │   └── task completed.png
 │
+├──.gitignore
 └── README.md
 ```
 
